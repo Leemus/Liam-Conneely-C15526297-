@@ -26,7 +26,7 @@ void draw()
   plane.planemove();
   box.drawbox();
   clouds.drawClouds();
-  player.drawPlayer();
+  box.drawPlayer();
   box.keyReleased();
   box.boxMove();
 }

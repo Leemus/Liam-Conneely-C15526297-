@@ -35,6 +35,8 @@ float clouds4Y = 170;
 float clouds5X = 130;
 float clouds5Y = 245;
 float c = #FF1212;
+float playerX = 45;
+float playerY = 495;
      
 
   
