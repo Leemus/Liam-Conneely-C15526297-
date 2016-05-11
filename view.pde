@@ -15,6 +15,8 @@ void landscape()
  stroke(#40E3D4);
  fill(#40E3D4);
  rect(0,0, 600, 330);
+
+
   
   
 }
