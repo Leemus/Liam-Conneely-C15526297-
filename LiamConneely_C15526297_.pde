@@ -27,4 +27,6 @@ void draw()
   box.drawbox();
   clouds.drawClouds();
   player.drawPlayer();
+  box.keyReleased();
+  box.boxMove();
 }

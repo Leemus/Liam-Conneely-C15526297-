@@ -48,10 +48,15 @@ class Plane extends GameObject
      {
        
        planeX = -30;
-       frontX = -30;
+       
        backX = -30;
        wingsX = -30;
        windowX = -30;
+     }
+     
+     if ( frontX >= 630)
+     {
+       frontX = -30;
      }
     
    }
