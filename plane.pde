@@ -32,7 +32,7 @@ class Plane extends GameObject
      ellipse(movement.x,movement.y,movement.x,movement.y);
      if ( movement.x <= 0)
      {
-       println("works");
+     
       planeX ++;
       
        frontX ++;

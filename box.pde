@@ -21,7 +21,7 @@ class Box extends GameObject
    
    void keyReleased() {
   if (key == ' ')  {
-      println("yes");
+      
       boxY ++;
      c = random(0, 255);
       boxmovement.x = -100;
@@ -61,13 +61,19 @@ class Box extends GameObject
      
      if ( boxY >= 400)
      {
-       println("go");
+      
        playerX = boxX;
        playerY = boxY;
        
      }
   
-   
+    if (playerY == boxY)
+     {
+      
+       boxX = random(0, 600);;
+       boxY = 30;
+
+     }
    
    }
     
