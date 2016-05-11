@@ -9,6 +9,8 @@ void setup()
   gameobject = new GameObject();
   box = new Box();
   clouds = new Clouds();
+  player = new Player();
+  
 }
 
 View view;
@@ -16,6 +18,7 @@ Plane plane;
 GameObject gameobject;
 Clouds clouds;
 Box box;
+Player player;
 void draw()
 {
   view.landscape();
@@ -23,4 +26,5 @@ void draw()
   plane.planemove();
   box.drawbox();
   clouds.drawClouds();
+  player.drawPlayer();
 }
