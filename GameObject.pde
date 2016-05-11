@@ -32,6 +32,10 @@ float cloudsY = 100;
 float clouds2Y = 200;
 float clouds3Y = 270;
 float clouds4Y = 170;
+float clouds5X = 130;
+float clouds5Y = 245;
+float c = #FF1212;
+     
 
   
   

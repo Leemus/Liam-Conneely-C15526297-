@@ -14,6 +14,18 @@ class Player extends GameObject
      
      
    }
+   
+   void player2box()
+   {
+     
+     
+     if ( boxY == 400)
+     {
+       println("go");
+     }
+     
+     
+   }
   
   
   

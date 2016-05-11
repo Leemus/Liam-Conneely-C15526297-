@@ -7,6 +7,8 @@ class Box extends GameObject
   
   void drawbox()
   {
+    stroke(c);
+     fill(c);
    rect(boxX, boxY, 10,10);  
    ellipse(boxmovement.x,boxmovement.y,10,10);
    
@@ -21,7 +23,7 @@ class Box extends GameObject
   if (key == ' ')  {
       println("yes");
       boxY ++;
-      
+     c = random(0, 255);
       boxmovement.x = -100;
     }
   }
