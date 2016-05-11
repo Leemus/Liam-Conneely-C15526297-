@@ -7,11 +7,49 @@ class Plane extends GameObject
   }
    void drawplane()
    {
-     stroke(#8FA5A3);
-     fill(#8FA5A3);
-     rect(plane.x,plane.y, plane.x + 70, plane.y);
-     triangle(back.x, back.y, back.x, back.y + 17, back.x + 30, back.y + 17);
-     triangle(front.x, front.y, front.x, front.y + 25, front.x + 25, front.y + 25);
+     stroke(#A21CD8);
+     fill(#A21CD8);
+     rect(planeX,plane.y, plane2.x - 5, plane2.y );
+     triangle(backX, back.y, backX, back.y + 17, backX + 30, back.y + 17);
+     triangle(frontX, front.y, frontX, front.y + 25, frontX + 25, front.y + 25);
+     rect(wingsX, 10, 35, 20);
+     rect(wingsX, 30, 35, 40);
+     fill(255);
+     rect(windowX, 31, 10,10);
+     rect(windowX + 16, 31, 10,10);
+     rect(windowX + 31, 31, 10,10);
+     fill(0);
+     rect(windowX + 61, 31, 10,10);
+   
+     
+     
+    
+     
+   }
+   
+   void planemove()
+   {
+     if ( movement.x <= 0)
+     {
+       println("works");
+      planeX ++;
+      
+       frontX ++;
+       backX ++;
+       wingsX ++;
+       windowX ++;
+       
+     }
+     
+     if ( planeX >= 600)
+     {
+       ellipse(movement.x,movement.y,movement.x,movement.y);
+       planeX = -30;
+       frontX = -30;
+       backX = -30;
+       wingsX = -30;
+       windowX = -30;
+     }
      
    }
   

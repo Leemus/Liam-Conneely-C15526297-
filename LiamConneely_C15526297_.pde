@@ -17,4 +17,5 @@ void draw()
 {
   view.landscape();
   plane.drawplane();
+  plane.planemove();
 }
