@@ -1,11 +1,7 @@
 class View 
 {
 
-View()
-{
-  
-  
-}
+
 
 void landscape()
 {
@@ -20,5 +16,4 @@ void landscape()
   
   
 }
-
 }

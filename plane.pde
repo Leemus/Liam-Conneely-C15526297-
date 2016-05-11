@@ -20,7 +20,7 @@ class Plane extends GameObject
      rect(windowX + 31, 31, 10,10);
      fill(0);
      rect(windowX + 61, 31, 10,10);
-   
+   fill(213);
      
      
     
@@ -29,6 +29,7 @@ class Plane extends GameObject
    
    void planemove()
    {
+     ellipse(movement.x,movement.y,movement.x,movement.y);
      if ( movement.x <= 0)
      {
        println("works");
@@ -38,19 +39,22 @@ class Plane extends GameObject
        backX ++;
        wingsX ++;
        windowX ++;
+       boxX ++;
        
      }
      
+     
      if ( planeX >= 600)
      {
-       ellipse(movement.x,movement.y,movement.x,movement.y);
+       
        planeX = -30;
        frontX = -30;
        backX = -30;
        wingsX = -30;
        windowX = -30;
      }
-     
+    
    }
-  
 }
+   
+  
